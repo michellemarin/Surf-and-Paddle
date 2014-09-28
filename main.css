@@ -100,14 +100,14 @@ header {
 .bg-image {
   width: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 5000;
 }
 
 .above-fold h1 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -131,7 +131,7 @@ header {
 
 .content-wrapper {
   width: 90%;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 
@@ -147,19 +147,21 @@ header {
 .content {
   float:left;
   width: 58%;
-  padding: 0px;
-  margin-top: 0px;
+  padding: 0;
+  margin-top: 0;
   margin-left: 5%;
-  text-align:left;
+  text-align: left;
   display: inline-block;
 }
 
 .content h1 {
   color: #083451;
-  font-size: 250%;
+  font-size: 420%;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 115%;
 }
 
 
@@ -217,13 +219,100 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 25px;
-  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.bq-contain {
+  border-left: 1px solid grey;
+  margin: 0 auto;
+  align: left;
+}
+
+blockquote {
+  margin-top: 30px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: #106DB3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+.end-post-buttons {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.end-post-buttons li {
+      float: left;
+      display: inline-block;
+      height: 20px;
+      margin: 0 auto;
+}
+
+.comment-icon::before {
+  content: url(icons/comments.png);
+  background-color: #5E686F;
+  margin-top: 2px;
+  padding: 5px 5px 5px 5px;
+
+}
+.read-comments {
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  background-color: #A3B3BF;
+}
+
+.read-comments:hover {
+  background-color: #106DB3;
+}
+
+.read-later {
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  background-color: #A3B3BF;
+}
+
+.read-later:hover {
+  background-color: #106DB3;
+}
+
+
+.later-icon::before {
+  content: url(icons/later.png);
+  background-color: #5E686F;
+  margin-top: 0 auto;
+  margin-left: 30px;
+  padding: 5px 5px 5px 5px;
+}
+
+.later-icon::hover {
+  background-color: #083452;
+}
+
+.share-this {
+  margin: 0 auto;
+  padding: 5px 5px 5px 5px;
+  background-color: #A3B3BF;
+}
+
+.share-this:hover {
+  background-color: #106DB3;
+}
+
+.share-icon::before {
+  content: url(icons/share.png);
+  background-color: #5E686F;
+  margin-top: 0 auto;
+  margin-left: 30px;
+  padding: 5px 5px 5px 5px;
 }
 
 .sidebar {
-  width: 23%;
-  padding: 0px;
-  margin-top: 0px;
+  width: 20%;
+  padding: 0;
+  margin-top: 0;
   margin-left: 5%;
   display: inline-block;
   float:left;
@@ -251,7 +340,7 @@ header {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .social-links-contain {
@@ -315,17 +404,40 @@ header {
   margin: 0px;
 }
 
-.images-bottom {
+
+.pop-posts {
   clear: both;
   display: block;
   width: 100%;
 }
 
-.most-pop-posts {
-  clear: both;
-  display: block;
+.pop-posts h1 {
   text-align: center;
+  color: #106DB3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 200%;
 }
+
+.tint-bottom {
+  float: left;
+  display: inline-block;
+  margin: 0 auto;
+  background: linear-gradient (to bottom, #106DB3, #166FB8);
+  width: 25%;
+  margin-top: 25px;
+}
+
+.tint-bottom img {
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.tint-bottom img:hover {
+  opacity: 0.8;
+}
+
 
 footer {
   clear: both;
@@ -349,6 +461,20 @@ footer {
   transform: translateY(-8%);
 }
 
+.iy-logo::before {
+  content: url(icons/theironyard.png);
+  margin-top: 0 auto;
+}
+
+.iy-copyright {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
 .footer-links {
   float: right;
   margin-right: 60px;
@@ -357,6 +483,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   top: 50%;
+  font-size: 14px;
   position:relative;
   transform: translateY(-8%);
 }
