@@ -411,13 +411,24 @@ blockquote {
   width: 100%;
 }
 
+.h1-space {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.line-space {
+  border-top: 1px solid grey;
+  margin-top: 30px;
+  padding: 10px;
+}
+
 .pop-posts h1 {
   text-align: center;
-  color: #106DB3;
+  color: #063250;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  font-size: 200%;
+  font-size: 300%;
 }
 
 .tint-bottom {
@@ -447,7 +458,7 @@ footer {
   background-color: #083451;
   padding: 10px;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 0 auto;
 }
 
 .copyright {
