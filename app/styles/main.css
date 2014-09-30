@@ -231,18 +231,11 @@ blockquote {
   margin-top: 2px;
   padding: 5px; }
 
-.read-comments {
+.read-comments, .read-later, .share-this {
   margin: 0 auto;
   padding: 5px;
   background-color: #A3B3BF; }
-  .read-comments:hover {
-    background-color: #106DB3; }
-
-.read-later {
-  margin: 0 auto;
-  padding: 5px;
-  background-color: #A3B3BF; }
-  .read-later:hover {
+  .read-comments:hover, .read-later:hover, .share-this:hover {
     background-color: #106DB3; }
 
 .later-icon::before {
@@ -251,13 +244,6 @@ blockquote {
   margin-top: 0;
   margin-left: 30px;
   padding: 5px; }
-
-.share-this {
-  margin: 0 auto;
-  padding: 5px;
-  background-color: #A3B3BF; }
-  .share-this:hover {
-    background-color: #106DB3; }
 
 .share-icon::before {
   content: url(../icons/share.png);

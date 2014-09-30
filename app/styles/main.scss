@@ -308,16 +308,6 @@ blockquote {
   }
 }
 
-.read-later {
-  margin: 0 auto;
-  padding: 5px;
-  background-color: $light-gray;
-
-  &:hover {
-   background-color: $light-blue;
-  }
-}
-
 .later-icon::before {
   content: url(../icons/later.png);
   background-color: $dark-gray;
@@ -326,14 +316,8 @@ blockquote {
   padding: 5px;
 }
 
-.share-this {
-  margin: 0 auto;
-  padding: 5px;
-  background-color: $light-gray;
-
-  &:hover {
-   background-color: $light-blue;
-  }
+.read-later {
+  @extend .read-comments;
 }
 
 .share-icon::before {
@@ -342,6 +326,10 @@ blockquote {
   margin-top: 0;
   margin-left: 30px;
   padding: 5px;
+}
+
+.share-this {
+  @extend .read-comments;
 }
 
 .sidebar {
