@@ -100,9 +100,8 @@ header {
 .company-name {
   display: inline-block;
   margin-top: 20px; }
-
-.company-name h4 {
-  color: #083451; }
+  .company-name h4 {
+    color: #083451; }
 
 .nav-menu {
   float: right;
@@ -130,6 +129,16 @@ header {
   position: relative;
   top: 40%;
   transform: translateY(-40%); }
+  .above-fold h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 6em; }
+  .above-fold p {
+    color: #083451;
+    text-align: center; }
 
 .bg-image {
   width: 100%;
@@ -137,18 +146,6 @@ header {
   top: 0;
   left: 0;
   z-index: 5000; }
-
-.above-fold h1 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', Verdana, sans-serif;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-size: 6em; }
-
-.above-fold p {
-  color: #083451;
-  text-align: center; }
 
 .tint {
   display: inline-block;
@@ -177,11 +174,10 @@ header {
   margin-top: 0;
   margin-left: 5%;
   text-align: left; }
-
-.content h1 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 115%; }
+  .content h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 115%; }
 
 .post-breadcrumbs {
   margin: 0 auto;
@@ -202,11 +198,10 @@ header {
 
 .date-before {
   margin-top: 5px; }
-
-.date-before::before {
-  content: 'on';
-  margin-top: 5px;
-  text-decoration: none; }
+  .date-before::before {
+    content: 'on';
+    margin-top: 5px;
+    text-decoration: none; }
 
 .date {
   display: inline-block;
@@ -224,12 +219,11 @@ blockquote {
 
 .end-post-buttons {
   margin-top: 20px; }
-
-.end-post-buttons li {
-  display: inline-block;
-  height: 20px;
-  margin: 0;
-  color: #FFFFFF; }
+  .end-post-buttons li {
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    color: #FFFFFF; }
 
 .comment-icon::before {
   content: url(../icons/comments.png);
@@ -241,17 +235,15 @@ blockquote {
   margin: 0 auto;
   padding: 5px;
   background-color: #A3B3BF; }
-
-.read-comments:hover {
-  background-color: #106DB3; }
+  .read-comments:hover {
+    background-color: #106DB3; }
 
 .read-later {
   margin: 0 auto;
   padding: 5px;
   background-color: #A3B3BF; }
-
-.read-later:hover {
-  background-color: #106DB3; }
+  .read-later:hover {
+    background-color: #106DB3; }
 
 .later-icon::before {
   content: url(../icons/later.png);
@@ -260,16 +252,12 @@ blockquote {
   margin-left: 30px;
   padding: 5px; }
 
-.later-icon::hover {
-  background-color: #083451; }
-
 .share-this {
   margin: 0 auto;
   padding: 5px;
   background-color: #A3B3BF; }
-
-.share-this:hover {
-  background-color: #106DB3; }
+  .share-this:hover {
+    background-color: #106DB3; }
 
 .share-icon::before {
   content: url(../icons/share.png);
@@ -285,6 +273,10 @@ blockquote {
   margin-left: 5%;
   display: inline-block;
   text-align: center; }
+  .sidebar h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0; }
 
 .my-headshot {
   width: 87px;
@@ -299,19 +291,13 @@ blockquote {
   display: block;
   margin: 0 auto; }
 
-.sidebar h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 0; }
-
 .social-links-contain {
   display: block;
   width: 200px;
   margin: 0 auto;
   text-align: center; }
-
-.social-links-contain li {
-  color: #A3B3BF; }
+  .social-links-contain li {
+    color: #A3B3BF; }
 
 .tint {
   display: inline-block;
@@ -332,20 +318,20 @@ blockquote {
 
 .sidebar-article {
   text-align: left; }
-
-.sidebar-article h3 {
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 0;
-  color: #106DB3; }
-
-.sidebar-article p {
-  max-width: 240px;
-  margin: 0; }
+  .sidebar-article h3 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #106DB3; }
+  .sidebar-article p {
+    max-width: 240px;
+    margin: 0; }
 
 .pop-posts {
   clear: both;
   display: block; }
+  .pop-posts h1 {
+    text-align: center; }
 
 .h1-space {
   margin-top: 30px;
@@ -355,9 +341,6 @@ blockquote {
   border-top: 1px solid #A3B3BF;
   margin-top: 30px;
   padding: 10px; }
-
-.pop-posts h1 {
-  text-align: center; }
 
 .tint-bottom {
   float: left;
@@ -397,7 +380,7 @@ footer {
   margin-top: 20px; }
 
 .footer-links {
-  float: right;
+  display: inline-block;
   margin-right: 60px;
   margin-top: 20px;
   height: 63px; }
